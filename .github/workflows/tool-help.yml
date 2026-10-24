@@ -1,0 +1,42 @@
+# OmicNote helpbot: started by the OmicNote app with a tool name.
+# Pulls the tool's biocontainers image, records its real --help (and every sub-command's), commits catalog/<tool>.json.
+name: Extract tool help
+run-name: "help ${{ inputs.tool }}"
+
+on:
+  workflow_dispatch:
+    inputs:
+      tool:
+        description: "Bioconda package name, e.g. seqkit"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: help-${{ inputs.tool }}
+  cancel-in-progress: false
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run the tool in its container
+        env:
+          TOOL: ${{ inputs.tool }}   # passed as env, never pasted into the shell
+        run: node extract.mjs "$TOOL"
+      - name: Save the result
+        env:
+          TOOL: ${{ inputs.tool }}
+        run: |
+          git config user.name "omicnote-helpbot"
+          git config user.email "helpbot@users.noreply.github.com"
+          git add "catalog/$TOOL.json"
+          git commit -m "help: $TOOL" || exit 0
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && exit 0; sleep $((i * 3)); done
+          exit 1
