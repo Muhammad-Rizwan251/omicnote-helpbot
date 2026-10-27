@@ -16,5 +16,5 @@
   "debug-map": "Diagnostic: per-read best-mapping detail (placement, seed coverage, score)\n\nUsage: salmon debug-map [OPTIONS] --index <INDEX> --reads <READS>\n\nOptions:\n  -i, --index <INDEX>     \n  -r, --reads <READS>     Single-end FASTQ (plain text)\n      --sparseSeeds       Seed with sparse fixed-k k-mer anchors instead of the default unitig-constrained uni-MEMs\n      --refMEMs           Seed with reference-extended MEMs (cross unitig boundaries)\n      --uniMEMs           Seed with true unitig-constrained uni-MEMs (pufferfish-style; default)\n  -q, --quiet             Reduce logging to warnings and errors only\n      --no-version-check  Accepted for compatibility with C++ salmon. salmon 2.0 never contacts the network to check for a newer release, so this flag (and the `SALMON_NO_VERSION_CHECK` environment variable) is a no-op\n  -h, --help              Print help"
  },
  "others": {},
- "extractedAt": "2026-10-27T06:31:20.576Z"
+ "extractedAt": "2026-10-27T14:46:18.616Z"
 }
