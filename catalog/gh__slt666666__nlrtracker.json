@@ -1,0 +1,19 @@
+{
+ "name": "nlrtracker",
+ "image": "hb_built_nlrtracker",
+ "version": "latest",
+ "method": "script",
+ "repo": "slt666666/nlrtracker",
+ "binaries": [
+  "NLRtracker",
+  "NLRtracker.sh"
+ ],
+ "key": "gh__slt666666__nlrtracker",
+ "main": "NLRtracker",
+ "help": "---------------------- input & option -----------------------\nUsage: NLRtracker [OPTION]...\n  -h               Display help\n  (required)\n  -s Filepath      File path to amino acid(/nucleotide seqence) file (.fasta)\n                   nucleotide seqence requires -t option.\n  -o String        Directory name to save output\n\n  (optional)\n  -i Filepath      Result of Interproscan (.gff3)\n  -f Filepath      Result of FIMO (.gff)\n  -t String        Seqtype of fasta file. dna/rna (\"n\") or protein (\"p\")\n                   Default: \"p\"\n  -c Integer       Number of CPUs for interproscan\n                   Default: 2\n  -m Filepath      meme.xml for use with FIMO\n                   Default: module/meme.xml (from NLR Annotator)\n  -x Filepath      hmm for use with HMMER\n                   Default: module/abe3069_Data_S1.hmm (from Ma et al., 2020)\n  -d Filepath      Description of Interproscan\n                   Default: module/InterProScan 5.53-87.0.list",
+ "subs": {},
+ "others": {
+  "NLRtracker.sh": "---------------------- input & option -----------------------\nUsage: NLRtracker.sh [OPTION]...\n  -h               Display help\n  (required)\n  -s Filepath      File path to amino acid(/nucleotide seqence) file (.fasta)\n                   nucleotide seqence requires -t option.\n  -o String        Directory name to save output\n\n  (optional)\n  -i Filepath      Result of Interproscan (.gff3)\n  -f Filepath      Result of FIMO (.gff)\n  -t String        Seqtype of fasta file. dna/rna (\"n\") or protein (\"p\")\n                   Default: \"p\"\n  -c Integer       Number of CPUs for interproscan\n                   Default: 2\n  -m Filepath      meme.xml for use with FIMO\n                   Default: module/meme.xml (from NLR Annotator)\n  -x Filepath      hmm for use with HMMER\n                   Default: module/abe3069_Data_S1.hmm (from Ma et al., 2020)\n  -d Filepath      Description of Interproscan\n                   Default: module/InterProScan 5.53-87.0.list"
+ },
+ "extractedAt": "2026-10-27T15:01:57.188Z"
+}
