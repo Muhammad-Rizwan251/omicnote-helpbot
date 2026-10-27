@@ -157,5 +157,5 @@
   "gif2rgb": "Error in command line parsing - None option Found - '--help'.\nUsage: gif2rgb [-v] [-c #Colors] [-s Width Height] [-1] [-o OutFileName] [-h] GifFile",
   "gifbuild": "Error in command line parsing - None option Found - '--help'.\nUsage: gifbuild [-v] [-d] [-t Characters] [-h] GifFile(s)"
  },
- "extractedAt": "2026-10-27T06:32:24.159Z"
+ "extractedAt": "2026-10-27T14:46:53.797Z"
 }
