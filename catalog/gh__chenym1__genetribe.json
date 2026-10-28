@@ -1,0 +1,21 @@
+{
+ "name": "genetribe",
+ "image": "hb_built_genetribe",
+ "version": "latest",
+ "method": "script",
+ "repo": "chenym1/genetribe",
+ "binaries": [
+  "genetribe",
+  "install",
+  "install.sh"
+ ],
+ "key": "gh__chenym1__genetribe",
+ "main": "genetribe",
+ "help": "Program: GeneTribe (a tool for homology inference)\nVersion: 1.2.1\n\nUsage: genetribe <command> [options]\n\nSubcommands include:\n\n[ pipeline ]\n     core           Core workflow of GeneTribe\n     corenog        Workflow not grouping chromosomes\n     sameassembly   Homology inference for the same assembly\n\n[ tool ]\n     RBH            Obtain Reciprocal Best Hits (RBH)\n     CBS            Calculate Collinearity Block Score (CBS)\n     longestcds     Extract longest protein sequence from protein fasta\n\nAuthor:    Chen,Yongming\nEmail:     chen_yongming@126.com\nHomepage:  https://chenym1.github.io/genetribe/",
+ "subs": {},
+ "others": {
+  "install": "check software dependencies\nbulding *py\nbulding *sh\n\nInstallation in finished\n\nPlease add the following line to your ~/.bash_profile, and source ~/.bash_profile before running genetribe.\n\n\texport PATH=/src:$PATH\n\n\n/usr/local/bin/install: 7: [: 0: unexpected operator\n/usr/local/bin/install: 12: [: 0: unexpected operator\n/usr/local/bin/install: 18: [: 1: unexpected operator\nchmod: cannot operate on dangling symlink '*py'\nchmod: cannot operate on dangling symlink '*sh'",
+  "install.sh": "check software dependencies\nbulding *py\nbulding *sh\n\nInstallation in finished\n\nPlease add the following line to your ~/.bash_profile, and source ~/.bash_profile before running genetribe.\n\n\texport PATH=/src:$PATH\n\n\n/usr/local/bin/install.sh: 7: [: 0: unexpected operator\n/usr/local/bin/install.sh: 12: [: 0: unexpected operator\n/usr/local/bin/install.sh: 18: [: 1: unexpected operator\nchmod: cannot operate on dangling symlink '*py'\nchmod: cannot operate on dangling symlink '*sh'"
+ },
+ "extractedAt": "2026-10-28T12:45:52.647Z"
+}
