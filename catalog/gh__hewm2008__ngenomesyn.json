@@ -1,0 +1,19 @@
+{
+ "name": "ngenomesyn",
+ "image": "hb_built_ngenomesyn",
+ "version": "latest",
+ "method": "script",
+ "repo": "hewm2008/ngenomesyn",
+ "binaries": [
+  "NGenomeSynGUI",
+  "NGenomeSynGUI.sh"
+ ],
+ "key": "gh__hewm2008__ngenomesyn",
+ "main": "NGenomeSynGUI",
+ "help": "============================================================\n 首次启动需要安装 PySide6（约 1-2 分钟），请稍候...\n First launch: installing PySide6 (about 1-2 minutes)...\n============================================================\n  默认源失败，尝试 --user 安装 / trying --user install...\n  失败，尝试清华镜像源 / trying Tsinghua mirror...\nPySide6 自动安装失败 / automatic install failed.\n请手动安装 / Please install manually:  python3 -m pip install PySide6\n（可能缺少权限或网络受限 / permission or network issue）",
+ "subs": {},
+ "others": {
+  "NGenomeSynGUI.sh": "============================================================\n 首次启动需要安装 PySide6（约 1-2 分钟），请稍候...\n First launch: installing PySide6 (about 1-2 minutes)...\n============================================================\n  默认源失败，尝试 --user 安装 / trying --user install...\n  失败，尝试清华镜像源 / trying Tsinghua mirror...\nPySide6 自动安装失败 / automatic install failed.\n请手动安装 / Please install manually:  python3 -m pip install PySide6\n（可能缺少权限或网络受限 / permission or network issue）"
+ },
+ "extractedAt": "2026-10-28T11:55:19.407Z"
+}
