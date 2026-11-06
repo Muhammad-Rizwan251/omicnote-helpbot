@@ -1,0 +1,20 @@
+{
+ "name": "mcscanx",
+ "image": "quay.io/biocontainers/mcscanx:1.0.0--h9948957_0",
+ "version": "1.0.0",
+ "method": "bioconda",
+ "binaries": [
+  "MCScanX",
+  "MCScanX_h",
+  "duplicate_gene_classifier"
+ ],
+ "key": "mcscanx",
+ "main": "MCScanX",
+ "help": "[Usage] MCScanX prefix_fn [options]\n -k  MATCH_SCORE, final score=MATCH_SCORE+NUM_GAPS*GAP_PENALTY\n     (default: 50)\n -g  GAP_PENALTY, gap penalty (default: -1)\n -s  MATCH_SIZE, number of genes required to call a collinear block\n     (default: 5)\n -e  E_VALUE, alignment significance (default: 1e-05)\n -m  MAX_GAPS, maximum gaps allowed (default: 25)\n -w  OVERLAP_WINDOW, maximum distance (# of genes) to collapse BLAST matches (default: 5)\n -a  only builds the pairwise blocks (.collinearity file)\n -b  patterns of collinear blocks. 0:intra- and inter-species (default); 1:intra-species; 2:inter-species\n -h  print this help page",
+ "subs": {},
+ "others": {
+  "MCScanX_h": "[Usage] MCScanX_h prefix_fn [options]\n -k  MATCH_SCORE, final score=MATCH_SCORE+NUM_GAPS*GAP_PENALTY\n     (default: 50)\n -g  GAP_PENALTY, gap penalty (default: -1)\n -s  MATCH_SIZE, number of genes required to call collinear blocks\n     (default: 5)\n -e  E_VALUE, alignment significance (default: 1e-05)\n -m  MAX_GAPS, maximum gaps allowed (default: 25)\n -w  OVERLAP_WINDOW, maximum distance (# of genes) to collapse BLAST matches (default: 5)\n -a  only builds the pairwise blocks (.collinearity file)\n -b  patterns of collinear blocks. 0:intra- and inter-species (default); 1:intra-species; 2:inter-species\n -c  whether to consider homology scores. 0:not consider (default); 1: lower preferred; 2: higher preferred\n -h  print this help page",
+  "duplicate_gene_classifier": "[Usage] duplicate_gene_classifier prefix_fn [options]\n -k  MATCH_SCORE, final score=MATCH_SCORE+NUM_GAPS*GAP_PENALTY\n     (default: 50)\n -g  GAP_PENALTY, gap penalty (default: -1)\n -s  MATCH_SIZE, number of genes required to call a collinear block\n     (default: 5)\n -e  E_VALUE, alignment significance (default: 1e-05)\n -w  OVERLAP_WINDOW, maximum distance (# of genes) to collapse BLAST matches (default: 5)\n -m  MAX_GAPS, maximum gaps allowed (default: 25)\n -n  N_PROXIMAL, maximum distance (# of genes) to call proximal (default: 10)\n -h  print this help page"
+ },
+ "extractedAt": "2026-11-06T05:15:30.994Z"
+}
